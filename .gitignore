@@ -1,0 +1,57 @@
+# Ignorar arquivos de ambiente virtual
+venv/
+env/
+.venv/
+.venv*/
+
+# Ignorar arquivos de configuração do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignorar arquivos de cache e logs
+*.log
+*.cache
+.pytest_cache/
+
+# Ignorar arquivos de configuração do IDE
+.vscode/
+.idea/
+
+# Ignorar arquivos de dados e cache de scraping
+data/
+output/
+*.csv
+*.json
+*.xlsx
+*.db
+*.sqlite
+
+# Ignorar arquivos de configuração do Git
+.gitattributes
+.gitconfig
+
+# Ignorar arquivos de dependências
+*.egg-info/
+dist/
+build/
+*.egg
+*.whl
+
+# Ignorar arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de configuração local
+.local/
+.settings/
+
+# Ignorar arquivos de chaves e credenciais
+*.key
+*.pem
+*.crt
+*.env
+.env
+secrets/
+credentials/
+config.py
