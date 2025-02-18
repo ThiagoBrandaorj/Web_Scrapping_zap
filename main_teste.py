@@ -69,7 +69,7 @@ def smooth_scroll():
 dados_imoveis = []
 
 # Loop para iterar sobre as páginas
-for pagina in range(1, 10):  # Páginas 1, 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9
+for pagina in range(1, 11):  # Páginas 1, 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9
     try:
         print(f"Coletando dados da página {pagina}...")
         
@@ -217,7 +217,9 @@ else:
 
 df_novos_dados = pd.DataFrame(dados_imoveis)
 df_final = pd.concat([df_existente, df_novos_dados], ignore_index=True)
+print(f"{df_final.shape[0]} imoveis antes de remover duplicatas")
 df_final.drop_duplicates(inplace=True)
+print(f"{df_final.shape[0]} imoveis depois de remover duplicatas")
 df_final.to_csv("dados_zap_imoveis.csv", index=False)
 
 print(f"Encontrados {len(dados_imoveis)} imóveis")  # Verifica se encontrou algo
