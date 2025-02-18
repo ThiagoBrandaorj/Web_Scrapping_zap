@@ -69,8 +69,9 @@ def smooth_scroll():
 dados_imoveis = []
 
 # Loop para iterar sobre as páginas
-for pagina in range(1, 11):  # Páginas 1, 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9
+for _ in range(10):  # Páginas 1, 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9
     try:
+        pagina = random.randint(1, 100)
         print(f"Coletando dados da página {pagina}...")
         
         # URL da página atual
